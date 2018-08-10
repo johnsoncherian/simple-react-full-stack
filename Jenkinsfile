@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'npm build'
+                bat 'npm i'
+				bat 'npm run build'
 				bat 'npm start'
             }
         }
